@@ -39,7 +39,7 @@ function showForecast(forecast) {
           <span class="forecast-temp-max">${day.tempMax}° /</span>
           <span class="forecast-temp-min">${day.tempMin}°</span>
           <br />
-          <img src="icons/${day.icon}-50.png" 
+          <img src="/images/${day.icon}-50.png" 
           class="day-weather-icon" 
           alt = "${day.description}"
           />
@@ -113,7 +113,7 @@ function showWeather(response) {
   h2.innerHTML = `${date.dayWeek}, ${date.time}`;
   todayWeatherDescription.innerHTML = weatherDescription;
   todayTemp.innerHTML = temperature;
-  todayWeatherIcon.setAttribute("src", `icons/${weatherIcon}-100.png`);
+  todayWeatherIcon.setAttribute("src", `/images/${weatherIcon}-100.png`);
   todayWeatherIcon.setAttribute("alt", `${weatherDescription}`);
   todayHumidity.innerHTML = `&nbsp;&nbsp;${humidity} %`;
   todayWind.innerHTML = `&nbsp;&nbsp${wind} m/s`;
